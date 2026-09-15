@@ -20,7 +20,7 @@ import Fashion5 from "../../assets/Agbada.jpeg";
 import Fashion9 from "../../assets/Agbada2.jpeg";
 import Fashion10 from "../../assets/Agbada3.jpeg";
 
-import Fashion6 from "../../assets/jalamia.jpeg";
+import Fashion6 from "../../assets/Jalamia.jpeg";
 
 
 

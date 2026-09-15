@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router'
 
 export default function Nav() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div>
         <header className="bg-white shadow-lg py-4 sticky top-0 z-50">
   <div className="container mx-auto flex items-center justify-between px-4">
     {/* Logo */}
-    <Link to="/">
-      <a href="#" className="flex items-center text-primary hover:text-secondary">
+    <Link to="/" className="flex items-center text-primary hover:text-secondary">
+      
       <svg
         className="h-8 w-8 mr-2"
         fill="none"
@@ -23,11 +24,12 @@ export default function Nav() {
         />
       </svg>
       <span className="text-xl text-purple-500 font-bold">Smyle Cutz✂️</span>
-    </a>
+    
     </Link>
     {/* Mobile Menu Button (Hidden on larger screens) */}
     <div className="md:hidden">
       <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
         id="menu-toggle"
         className="text-gray-800 hover:text-primary focus:outline-none transition-colors duration-300"
       >
@@ -49,14 +51,11 @@ export default function Nav() {
     {/* Desktop Navigation (Hidden on smaller screens) */}
     <nav className="hidden md:block">
       <ul className="flex space-x-8">
-       <Link to="/">
+       <Link to="/"  className=" hover:text-purple-500 transition-colors duration-300">
            <li>
-          <a
-            href="#"
-            className=" hover:text-purple-500 transition-colors duration-300"
-          >
+         
             Home
-          </a>
+          
         </li>
        </Link>
         <li>
@@ -85,52 +84,33 @@ export default function Nav() {
   </div>
   {/* Mobile Menu (Hidden by default) */}
   <nav
-    id="mobile-menu"
-    className="hidden md:hidden bg-gray-50 border-t border-gray-200 transition-height duration-300 ease-in-out"
+    // id="mobile-menu"
+    className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-gray-50 border-t border-gray-200`}
   >
     <ul className="px-4 py-2">
-      <li>
-        <a href="#" className="block py-2 hover:text-primary">
-          Home
-        </a>
+      <Link to="/">
+        <li className="block py-2 hover:text-primary">
+         Home
       </li>
-      <li>
-        <a href="#" className="block py-2 hover:text-primary">
-          About
-        </a>
+      </Link>
+     <Link to="/About">
+       <li className="block py-2 hover:text-primary">
+        About
       </li>
-      <li>
-        <a
-          href="#"
-          id="services-dropdown-toggle"
-          className="block py-2 hover:text-primary"
-        >
-          Services
-        </a>
+     </Link>
+      <Link to="/Service">
+        <li className="block py-2 hover:text-primary">
+        Services
         {/* Mobile Dropdown */}
-        <ul id="services-dropdown" className="hidden pl-4">
-          <li>
-            <a href="#" className="block py-2 hover:text-primary">
-              Service 1
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-2 hover:text-primary">
-              Service 2
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-2 hover:text-primary">
-              Service 3
-            </a>
-          </li>
-        </ul>
+        
       </li>
-      <li>
-        <a href="#" className="block py-2 hover:text-primary">
-          Contact
-        </a>
+      </Link>
+      <Link to="/Contact">
+        <li className="block py-2 hover:text-primary">
+       Contact
       </li>
+      </Link>
+      
      
     </ul>
   </nav>
