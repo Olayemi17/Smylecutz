@@ -12,11 +12,12 @@ export default function Book_Appointment() {
 
         emailjs
             .sendForm(
-                "service_w2tz7pq",
-                "template_01zog81",
-                form.current,
-                "EdXRNM8cNDw_RJ_F8"
-            )
+                    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                    import.meta.env.VITE_EMAILJS_APPOINTMENT_TEMPLATE_ID,
+                    form.current,
+                    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+                )
+            
             .then(
                 () => {
                     alert("Appointment request sent successfully!");
