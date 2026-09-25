@@ -122,7 +122,7 @@ function Contact() {
                                 <div>
                                     <p className="text-sm text-gray-500">Email</p>
                                     <p className="font-semibold text-gray-900">
-                                        info@yourfashionbrand.com
+                                        mustaphaolayiwola866@gmail.com
                                     </p>
                                 </div>
                             </div>

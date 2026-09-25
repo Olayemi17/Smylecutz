@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router'
+import Fashion from "/Smylelogo.jpeg";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,7 +14,7 @@ export default function Nav() {
             className="flex items-center"
           >
             <img
-              src="/Smylelogo.jpeg"
+              src={Fashion}
               alt="Smyle Cutz"
               className="h-10 w-10 object-contain mr-2"
             />
