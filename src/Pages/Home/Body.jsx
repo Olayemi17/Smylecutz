@@ -17,10 +17,7 @@ export default function Body() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Smyle Cutz</title>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          rel="stylesheet"
-        />
+        
         <style
           dangerouslySetInnerHTML={{
             __html:
@@ -30,7 +27,7 @@ export default function Body() {
         {/* Hero Section */}
         <section className="relative bg-linear-to-br from-purple-900 via-indigo-800 to-blue-900 text-white overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+            <div className="absolute top-0 left-0 w-full h-full" />
           </div>
           <div className="container mx-auto px-6 py-24 relative z-10">
             <div className="flex flex-col lg:flex-row items-center">
@@ -147,14 +144,13 @@ export default function Body() {
                     shape, giving you a clean and comfortable fit.
                   </p>
 
-                 <Link to="/Tailoring">
-                    <a
-                    href="#"
-                    className="text-blue-600 font-semibold inline-flex items-center"
-                  >
+                 <Link  to="/Tailoring" className="text-blue-600 font-semibold inline-flex items-center">
+                    
+                   
+                  
                     Explore our tailoring →
                     <i className="fas fa-arrow-right ml-2" />
-                  </a>
+                  
                  </Link>
                 </div>
 
@@ -176,13 +172,12 @@ export default function Body() {
                     From elegant Agbada and Senator wear to sophisticated
                     business suits and wedding attire, we create styles for every occasion.
                   </p>
-                 <Link to="/Collection">
-                     <a
-                    href="#"
-                    className="text-blue-600 font-semibold inline-flex items-center"
-                  >
+                 <Link to="/Collection" className="text-blue-600 font-semibold inline-flex items-center">
+                     
+                    
+                  
                     View our collections → <i className="fas fa-arrow-right ml-2" />
-                  </a>
+                  
                  
                  </Link>
                 </div>
@@ -205,13 +200,12 @@ export default function Body() {
                     We use carefully selected fabrics and pay attention to every
                     stitch, button, and finishing detail to deliver outfits you can be proud to wear.
                   </p>
-                  <Link to="/Craftmanship">
-                  <a
-                    href="#"
-                    className="text-blue-600 font-semibold inline-flex items-center"
-                  >
+                  <Link to="/Craftmanship" className="text-blue-600 font-semibold inline-flex items-center">
+                  
+                   
+                  
                     Our craftsmanship → <i className="fas fa-arrow-right ml-2" />
-                  </a>
+                  
                   </Link>
                 </div>
               </div>
