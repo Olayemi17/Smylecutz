@@ -1,6 +1,6 @@
 import React from 'react'
 import Fashion2 from "../../assets/fashion4.png";
-import Fashion from "../../assets/Smylelogo.jpeg";
+import Fashion from "/Smylelogo.jpeg";
 import Fashion7 from "../../assets/fashion7.png"
 import Fashion8 from "../../assets/fashion8.png"
 import Fashion9 from "../../assets/fashion9.png"
