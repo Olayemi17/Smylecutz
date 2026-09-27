@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -108,10 +109,12 @@ export default function Footer() {
                   <i className="fab fa-twitter" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/olayiwola.ismail.980"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors"
                 >
-                  <i className="fab fa-facebook-f" />
+                  <FaFacebookF />
                 </a>
                 <a
                   href="#"
